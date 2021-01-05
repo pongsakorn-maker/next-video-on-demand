@@ -1,7 +1,17 @@
-import '../styles/globals.css'
+import React from 'react'
+import App from 'next/app'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default class _app extends App {
+  render() {
+    const {Component} = this.props
+    return (
+      <div>
+      <Navbar/>
+        <Component/>
+      <Footer/>
+      </div>
+    )
+  }
 }
-
-export default MyApp

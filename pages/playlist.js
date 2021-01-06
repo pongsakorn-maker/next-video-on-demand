@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-export default function aboutus() {
+export default function Playlist() {
   return <>
   <div className={styles.container}>
       <Head>
-        <title>About Us</title>
+        <title>Playlist</title>
         <link rel="icon" href="/book.png" />
       </Head>
 
